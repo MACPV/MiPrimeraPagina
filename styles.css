@@ -1,0 +1,269 @@
+
+
+body{
+    background-color: rgb(66, 154, 199);
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    border: 0px;
+    margin: 0px;
+    width: 100%;
+}
+a{
+    color:black;
+    
+}
+img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+header{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-grow: 0.2;
+    font-family: "Megrim", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul.menu {
+    float: right;
+}
+nav ul.menu li {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 5px;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+footer{
+    padding: 10px;
+    background-color: blanchedalmond;
+    display: flex;
+    font-family: "Megrim", system-ui;
+    font-weight: 400;
+    flex-direction: column;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.seccion-1{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-items: center;
+    border: 4px dotted black;
+    overflow: hidden;
+}
+.acerca-de{
+    
+    border: 4px dotted rgb(226, 10, 10);
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    text-align: right;
+    margin: 0 10px;
+    width: 250px;
+    overflow: hidden;
+}
+.acerca-imagen {
+    display: flex;
+    margin: 10px;
+    border-radius: 10%;
+    BORDER: 10PX;
+    width: 250px;
+    height: 250px;
+    overflow: inherit;
+    border-radius: 5%;
+    border: 4px dotted rgb(198, 241, 5);
+}
+.seccion-2{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.Imagen2{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    left: 0;
+}
+.links{
+    display: flex;
+    
+    flex-direction: column;
+}
+.martillito-final {
+    display: flex;
+    align-self: flex-end;
+    color: red;
+}
+footer .martillito-final a{
+color:brown;
+}
+.tarjetas{
+    display: block;
+    padding-bottom: 25px;
+
+}
+.seccion-tarjetas{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin: 0 10px;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.SecTarImg{
+    display: flex;
+    padding-left: 10;
+    box-sizing: border-box;
+    width: fit-content;
+    height: 210px;
+    justify-content: center;
+    border-radius: 10%;
+}
+.tarjeta-1,.tarjeta-2,.tarjeta-3{
+    display: flex;
+    padding: 20PX;
+    border: 10PX;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    
+    overflow: hidden;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    background-color: rgb(146, 197, 197);
+    width: 400px;
+}
+.banner-end{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario h2{
+    font-family: "Megrim", system-ui;
+}
+.form-row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px){
+    a{
+        color:rgb(4, 217, 1);
+        
+    }
+    .acerca-imagen{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .menu{
+        display: flex;
+        height: 100%;
+    }
+    .seccion-1{
+        flex-direction: column;
+    }
+    header {
+        background-color: burlywood;
+    }
+    
+    .checkbtn {
+        display: block;
+    }
+    
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    .navbar ul.menu {
+        float: none;
+        display: flex;
+        margin: 0 auto;
+        opacity: 0;
+    }
+    
+    .navbar ul.menu li a:hover {
+        color: #b59a61;
+    }
+      /* ACTIVE */
+    .navbar.active {
+        height: 100vh;
+        display: flex;
+        align-content: stretch;
+    }
+    
+    .navbar.active ul.menu {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+    .navbar.active ul.menu li{
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        
+    }
+    .navbar.active ul.menu li a{
+        color:rgb(0, 207, 249);
+        font-size: 30px;
+        
+        display: flex;
+        
+    }
+
+}
